@@ -308,65 +308,6 @@
     </div>
   </section>
 
-
-  <div class="form-card">
-    <h3>📋 Formulaire de réservation</h3>
-    <form id="reservationForm" novalidate>
-      <div class="form-row">
-        <div class="form-group">
-          <label>Nom complet <span class="required">*</span></label>
-          <input type="text" class="form-control" id="inputName" placeholder="Votre nom complet" required>
-          <div class="error-msg" id="errorName">⚠ Veuillez saisir votre nom</div>
-        </div>
-        <div class="form-group">
-          <label>Email <span class="required">*</span></label>
-          <input type="email" class="form-control" id="inputEmail" placeholder="votre@email.com" required>
-          <div class="error-msg" id="errorEmail">⚠ Veuillez saisir un email valide</div>
-        </div>
-      </div>
-
-      <div class="form-row">
-        <div class="form-group">
-          <label>Date de début <span class="required">*</span></label>
-          <input type="date" class="form-control" id="inputDateStart" required>
-          <div class="error-msg" id="errorDateStart">⚠ Veuillez sélectionner une date</div>
-        </div>
-        <div class="form-group">
-          <label>Date de fin <span class="required">*</span></label>
-          <input type="date" class="form-control" id="inputDateEnd" required>
-          <div class="error-msg" id="errorDateEnd">⚠ Veuillez sélectionner une date</div>
-        </div>
-      </div>
-
-      <div class="form-group">
-        <label>Voiture <span class="required">*</span></label>
-        <select class="form-control" id="inputCar" required>
-          <option value="">— Sélectionnez un véhicule —</option>
-          <option value="Mercedes-Benz Classe C">Mercedes-Benz Classe C — 120€/jour</option>
-          <option value="BMW X5 xDrive">BMW X5 xDrive — 180€/jour</option>
-          <option value="Audi A5 Coupé">Audi A5 Coupé — 150€/jour</option>
-          <option value="Porsche Cayenne">Porsche Cayenne — 250€/jour</option>
-          <option value="Range Rover Velar">Range Rover Velar — 220€/jour</option>
-          <option value="Tesla Model 3">Tesla Model 3 — 130€/jour</option>
-        </select>
-        <div class="error-msg" id="errorCar">⚠ Veuillez choisir un véhicule</div>
-      </div>
-
-      <div class="form-group">
-        <label>Téléphone <span class="required">*</span></label>
-        <input type="tel" class="form-control" id="inputPhone" placeholder="+212 6XX XXX XXX" required>
-        <div class="error-msg" id="errorPhone">⚠ Veuillez saisir un numéro de téléphone valide</div>
-      </div>
-
-      <button type="submit" class="btn btn-primary">
-        🚗 Confirmer la réservation
-      </button>
-    </form>
-  </div>
-  </div>
-  </div>
-  </section>
-
   <!-- ======================== WHY US ======================== -->
   <section id="pourquoi">
     <div class="container">
@@ -441,108 +382,163 @@
         </div>
 
         <!-- Form -->
-
-
-        <!-- ======================== CONTACT ======================== -->
-        <section id="contact">
-          <div class="container">
-            <div class="section-title reveal">
-              <h2>Contactez-nous</h2>
-              <p>Notre équipe est à votre disposition pour toute question</p>
-            </div>
-
-            <div class="contact-grid">
-              <div class="contact-card reveal">
-                <div class="contact-card-icon">📍</div>
-                <h4>Adresse</h4>
-                <p>123 Avenue des Champs-Élysées<br>75008 Paris, France</p>
+        <div class="form-card reveal">
+          <h3>📋 Formulaire de réservation</h3>
+          <form id="reservationForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Nom complet <span class="required">*</span></label>
+                <input type="text" class="form-control" id="inputName" placeholder="Votre nom complet" required>
+                <div class="error-msg" id="errorName">⚠ Veuillez saisir votre nom</div>
               </div>
-              <div class="contact-card reveal">
-                <div class="contact-card-icon">📞</div>
-                <h4>Téléphone</h4>
-                <p>+33 1 23 45 67 89<br>Lun-Sam : 8h — 20h</p>
-              </div>
-              <div class="contact-card reveal">
-                <div class="contact-card-icon">✉️</div>
-                <h4>Email</h4>
-                <p>contact@reddrive.fr<br>reservation@reddrive.fr</p>
-              </div>
-              <div class="contact-card reveal">
-                <div class="contact-card-icon">💬</div>
-                <h4>Chat en direct</h4>
-                <p>Discutez avec nous en temps réel via notre support en ligne</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- ======================== FOOTER ======================== -->
-        <footer class="footer">
-          <div class="container">
-            <div class="footer-grid">
-              <div class="footer-about">
-                <a href="#" class="logo">
-                  <div class="logo-icon">R</div>
-                  Red<span>Drive</span>
-                </a>
-                <p>Votre partenaire premium de location de voitures. Confort, élégance et performance depuis 2018.</p>
-                <div class="social-links">
-                  <a href="#" class="social-link" aria-label="Facebook">📘</a>
-                  <a href="#" class="social-link" aria-label="Instagram">📷</a>
-                  <a href="#" class="social-link" aria-label="Twitter">🐦</a>
-                  <a href="#" class="social-link" aria-label="LinkedIn">💼</a>
-                </div>
-              </div>
-
-              <div class="footer-col">
-                <h4>Navigation</h4>
-                <ul>
-                  <li><a href="#accueil">Accueil</a></li>
-                  <li><a href="#voitures">Voitures</a></li>
-                  <li><a href="#reservation">Réservation</a></li>
-                  <li><a href="#contact">Contact</a></li>
-                </ul>
-              </div>
-
-              <div class="footer-col">
-                <h4>Services</h4>
-                <ul>
-                  <li><a href="#">Location courte durée</a></li>
-                  <li><a href="#">Location longue durée</a></li>
-                  <li><a href="#">Transfert aéroport</a></li>
-                  <li><a href="#">Chauffeur privé</a></li>
-                </ul>
-              </div>
-
-              <div class="footer-col">
-                <h4>Légal</h4>
-                <ul>
-                  <li><a href="#">Conditions générales</a></li>
-                  <li><a href="#">Politique de confidentialité</a></li>
-                  <li><a href="#">Mentions légales</a></li>
-                  <li><a href="#">FAQ</a></li>
-                </ul>
+              <div class="form-group">
+                <label>Email <span class="required">*</span></label>
+                <input type="email" class="form-control" id="inputEmail" placeholder="votre@email.com" required>
+                <div class="error-msg" id="errorEmail">⚠ Veuillez saisir un email valide</div>
               </div>
             </div>
 
-            <div class="footer-bottom">
-              &copy; 2026 <span>RedDrive</span>. Tous droits réservés.
+            <div class="form-row">
+              <div class="form-group">
+                <label>Date de début <span class="required">*</span></label>
+                <input type="date" class="form-control" id="inputDateStart" required>
+                <div class="error-msg" id="errorDateStart">⚠ Veuillez sélectionner une date</div>
+              </div>
+              <div class="form-group">
+                <label>Date de fin <span class="required">*</span></label>
+                <input type="date" class="form-control" id="inputDateEnd" required>
+                <div class="error-msg" id="errorDateEnd">⚠ Veuillez sélectionner une date</div>
+              </div>
             </div>
-          </div>
-        </footer>
 
-        <!-- ======================== SUCCESS MODAL ======================== -->
-        <div class="success-modal" id="successModal">
-          <div class="success-modal-content">
-            <div class="success-icon">✅</div>
-            <h3>Réservation envoyée !</h3>
-            <p>WhatsApp s'est ouvert avec votre demande de réservation. Envoyez le message pour que notre équipe vous
-              contacte rapidement.</p>
-            <button class="btn btn-primary" id="closeModal">Parfait !</button>
+            <div class="form-group">
+              <label>Voiture <span class="required">*</span></label>
+              <select class="form-control" id="inputCar" required>
+                <option value="">— Sélectionnez un véhicule —</option>
+                <option value="Mercedes-Benz Classe C">Mercedes-Benz Classe C — 120€/jour</option>
+                <option value="BMW X5 xDrive">BMW X5 xDrive — 180€/jour</option>
+                <option value="Audi A5 Coupé">Audi A5 Coupé — 150€/jour</option>
+                <option value="Porsche Cayenne">Porsche Cayenne — 250€/jour</option>
+                <option value="Range Rover Velar">Range Rover Velar — 220€/jour</option>
+                <option value="Tesla Model 3">Tesla Model 3 — 130€/jour</option>
+              </select>
+              <div class="error-msg" id="errorCar">⚠ Veuillez choisir un véhicule</div>
+            </div>
+
+            <div class="form-group">
+              <label>Téléphone <span class="required">*</span></label>
+              <input type="tel" class="form-control" id="inputPhone" placeholder="+212 6XX XXX XXX" required>
+              <div class="error-msg" id="errorPhone">⚠ Veuillez saisir un numéro de téléphone valide</div>
+            </div>
+
+            <button type="submit" class="btn btn-primary">
+              🚗 Confirmer la réservation
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== CONTACT ======================== -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-title reveal">
+        <h2>Contactez-nous</h2>
+        <p>Notre équipe est à votre disposition pour toute question</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-card reveal">
+          <div class="contact-card-icon">📍</div>
+          <h4>Adresse</h4>
+          <p>123 Avenue des Champs-Élysées<br>75008 Paris, France</p>
+        </div>
+        <div class="contact-card reveal">
+          <div class="contact-card-icon">📞</div>
+          <h4>Téléphone</h4>
+          <p>+33 1 23 45 67 89<br>Lun-Sam : 8h — 20h</p>
+        </div>
+        <div class="contact-card reveal">
+          <div class="contact-card-icon">✉️</div>
+          <h4>Email</h4>
+          <p>contact@reddrive.fr<br>reservation@reddrive.fr</p>
+        </div>
+        <div class="contact-card reveal">
+          <div class="contact-card-icon">💬</div>
+          <h4>Chat en direct</h4>
+          <p>Discutez avec nous en temps réel via notre support en ligne</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== FOOTER ======================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a href="#" class="logo">
+            <div class="logo-icon">R</div>
+            Red<span>Drive</span>
+          </a>
+          <p>Votre partenaire premium de location de voitures. Confort, élégance et performance depuis 2018.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Facebook">📘</a>
+            <a href="#" class="social-link" aria-label="Instagram">📷</a>
+            <a href="#" class="social-link" aria-label="Twitter">🐦</a>
+            <a href="#" class="social-link" aria-label="LinkedIn">💼</a>
           </div>
         </div>
 
-        <script src="script.js"></script>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#voitures">Voitures</a></li>
+            <li><a href="#reservation">Réservation</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#">Location courte durée</a></li>
+            <li><a href="#">Location longue durée</a></li>
+            <li><a href="#">Transfert aéroport</a></li>
+            <li><a href="#">Chauffeur privé</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Légal</h4>
+          <ul>
+            <li><a href="#">Conditions générales</a></li>
+            <li><a href="#">Politique de confidentialité</a></li>
+            <li><a href="#">Mentions légales</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        &copy; 2026 <span>RedDrive</span>. Tous droits réservés.
+      </div>
+    </div>
+  </footer>
+
+  <!-- ======================== SUCCESS MODAL ======================== -->
+  <div class="success-modal" id="successModal">
+    <div class="success-modal-content">
+      <div class="success-icon">✅</div>
+      <h3>Réservation envoyée !</h3>
+      <p>Votre demande de réservation a été enregistrée avec succès. Notre équipe vous contactera rapidement pour confirmer les détails.</p>
+      <button class="btn btn-primary" id="closeModal">Parfait !</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
